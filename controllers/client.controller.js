@@ -35,14 +35,13 @@ const crearNuevaLinea = (nombre, email, id) => {
       .then((respuesta) => {
         console.log(respuesta);
       })
-      .catch((err) => alert("Ocurrió un error"));
+      .catch((err) => alert("Ocurrió un error en innerHTML"));
   });
 
   return linea;
 };
 
 const table = document.querySelector("[data-table]");
-
 clientServices
   .listaClientes()
   .then((data) => {
